@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 负责数据库连接和sqlSessionFactory创建 -->
+
+    <!-- 1.读取jdbc连接的信息 -->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+<!--    <context:property-placeholder location="classpath:redis.properties" />--> <!-- 一个spring容器只能有一个这个配置 -->
+
+
+    <!-- 2.配置数据库连接池（即数据源） TODO:这个类要深入学习一下 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}" />
+        <property name="user" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+
+        <property name="minPoolSize" value="10" />
+        <property name="maxPoolSize" value="30" />
+        <property name="autoCommitOnClose" value="false" />
+        <property name="checkoutTimeout" value="1000" />
+        <property name="acquireRetryAttempts" value="3" />
+    </bean>
+
+    <!-- 3.sqlSessionFactory -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations" value="classpath:mapper/*.xml" />
+        <property name="configLocation" value="classpath:mybatis-config.xml" />
+        <property name="typeAliasesPackage" value="entity" />
+    </bean>
+
+    <!-- 3.[实现mapper映射]自动扫描dao包，并通过映射文件动态生成 实现dao接口 的代理类-->
+    <!-- 原始方法是人为实现dao接口并通过注入sqlSessionFactory，并借此使用映射文件 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+        <property name="basePackage" value="dao" />
+    </bean>
+
+    <!-- 配置redis -->
+    <bean id="redisDao" class="dao.cache.RedisDao">
+        <constructor-arg index="0" value="localhost"/>
+        <constructor-arg index="1" value="6379" />
+    </bean>
+</beans>

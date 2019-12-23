@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.SeckillDao">
+    <select id="queryAll" resultType="entity.Seckill">
+        select * from seckill where is_delete=0;
+    </select>
+    <select id="queryById" resultType="entity.Seckill">
+        select * from seckill where seckill_id=#{seckillId} and is_delete=0;
+    </select>
+    <update id="reduceNumById">
+        update seckill
+        set  number=number-1
+        where seckill_id=#{seckillId} and is_delete=0 and number > 0;
+    </update>
+
+    <!-- 调用存储过程执行秒杀 -->
+    <select id="killByProcedure" statementType="CALLABLE">
+        call execute_seckill(
+          #{seckillId,jdbcType=BIGINT,mode=IN},
+          #{phone,jdbcType=TIMESTAMP,mode=IN},
+          #{killTime,jdbcType=BIGINT,mode=IN},
+          #{result,jdbcType=INTEGER,mode=OUT}
+        )
+    </select>
+</mapper>
