@@ -7,72 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f977b776-37de-4dfd-934c-5c8475b2b65f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seckill.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/SeckillDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/SuccessKillDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/cache/RedisDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/ExecutionResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/Exposer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/SeckillResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Seckill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/SuccessKill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enums/SeckillStateEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/SeckillService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/impl/SeckillServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/SeckillController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SeckillDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SuccessKillDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sql/executeSeckill.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sql/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/common/tag.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/seckill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/dao/RedisDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/dao/SeckillDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/dao/SuccessKillDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/service/SeckillServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/SeckillDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapper/SuccessKillDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/classes/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/classes/mapper/SeckillDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/classes/mapper/SuccessKillDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/classes/spring/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/classes/spring/spring-service.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/jsp/common/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/jsp/common/tag.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/jsp/detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/jsp/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/seckill/js/seckill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,8 +62,11 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1VHtHr4aT7eDTeKIgm5lCTORGx0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -438,7 +377,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576921763916</updated>
       <workItem from="1576921766275" duration="644000" />
-      <workItem from="1576922454962" duration="37515000" />
+      <workItem from="1576922454962" duration="37789000" />
     </task>
     <servers />
   </component>
@@ -455,5 +394,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
