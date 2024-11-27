@@ -57,7 +57,7 @@
     <dependency>
       <groupId>com.mchange</groupId> <!-- 数据库连接池 -->
       <artifactId>c3p0</artifactId>
-      <version>0.9.5.2</version>
+      <version>0.9.5.4</version>
     </dependency>
 
 
